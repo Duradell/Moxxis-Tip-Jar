@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MoxxiTipJar.exe" version="1.0.0.2" publicKeyToken="6a282f57acfc71e6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MoxxiTipJar" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MoxxiTipJar.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Cryptography.dll" size="4714144">
+      <assemblyIdentity name="BouncyCastle.Cryptography" version="2.0.0.0" publicKeyToken="072EDCF4A5328938" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6YN4nvvetRoceQghufaqsniA2BP2WpwiPsy4KsFyjnY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoxxiTipJar.exe" size="36824">
+      <assemblyIdentity name="MoxxiTipJar" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wvdWuKgTWnxAyj78kiI9LTdLxC0hEVkKGwRxkrRonsM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YamlDotNet.dll" size="291840">
+      <assemblyIdentity name="YamlDotNet" version="16.0.0.0" publicKeyToken="EC19458F3C15AF5E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kXLwdY7XaWPg7eO1ypoftbgvZMfnqSyzpt4576kzpmg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YamlDotNet.NetCore.dll" size="172032">
+      <assemblyIdentity name="YamlDotNet.NetCore" version="0.0.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x7foDOggOO0y1Ypzaxe9YyNXH73grTT8rAl8tXnPyUo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MoxxiTipJar.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MORGAN-DESKTOP\Corey" issuerKeyHash="c722618462f8780c1031d18d53d195623ef467d8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Xvi9SsrrF7VF375JOrqeZNGl1Duo8zmPvf5v765+Mi4=</DigestValue></Reference></SignedInfo><SignatureValue>bGUtQ36dYUCC3peOa915Urkmrax/Y3TC4pI4CxKvVBOK+F09WARxcmv2A2pLpj5HsOt6E71mAA6Q2WmOMIOBjCO56Y3Hni3JZqv5BHaIM8E2X0yCwnIojByd5uUyiB3bJp+Uvi8ukUhLwl3oAJM5brJVF2k2KGX2qq+Zy7jNOrg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>x8cAAgKBRsmmIF1uBTpDQjRpoz0950E1RveNV0uFZuopZnU3n+3/2CxrYzk8x3ltyNv8ZGUTEh+rFp3BsfJQ0ukO+f8aqYvNQL1x4q6k+ApXWJutjWKPGtfm1aPlB7R53e0Cr+4pv3Ox3PaeZDOI0lKdw5gsQOVp1orNKgpD6PE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2e327eaeef6ffebd8f39f3a83bd4a5d1649eba3a49bedf45b517ebca4abdf85e" Description="" Url=""><as:assemblyIdentity name="MoxxiTipJar.exe" version="1.0.0.2" publicKeyToken="6a282f57acfc71e6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MORGAN-DESKTOP\Corey</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9/vGHDZ78VaIReloJl0kbFvUX8EWrWhAcKwOfnq61uc=</DigestValue></Reference></SignedInfo><SignatureValue>IYG4jIzuXxjJVYwWiqntCPPY9Wis+skUfqnYJ/W4bxvw1f50QFgezyT7agYKEt75gLbk7elzENaPqchcZu/XdrZ6J9hZnwBSA3y62KGF4GguBAyk/MmWKQtb7hxP+AyWscfku4W8jCk4N44zDm2Z8dOTm0cv4IrYneuPNXqGb+M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>x8cAAgKBRsmmIF1uBTpDQjRpoz0950E1RveNV0uFZuopZnU3n+3/2CxrYzk8x3ltyNv8ZGUTEh+rFp3BsfJQ0ukO+f8aqYvNQL1x4q6k+ApXWJutjWKPGtfm1aPlB7R53e0Cr+4pv3Ox3PaeZDOI0lKdw5gsQOVp1orNKgpD6PE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQGzpVzRYwPKxIDdD+rufJlTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATQBPAFIARwBBAE4ALQBEAEUAUwBLAFQATwBQAFwAQwBvAHIAZQB5MB4XDTI1MTAxMjA5MDU0NloXDTI2MTAxMjE1MDU0NlowMzExMC8GA1UEAx4oAE0ATwBSAEcAQQBOAC0ARABFAFMASwBUAE8AUABcAEMAbwByAGUAeTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAx8cAAgKBRsmmIF1uBTpDQjRpoz0950E1RveNV0uFZuopZnU3n+3/2CxrYzk8x3ltyNv8ZGUTEh+rFp3BsfJQ0ukO+f8aqYvNQL1x4q6k+ApXWJutjWKPGtfm1aPlB7R53e0Cr+4pv3Ox3PaeZDOI0lKdw5gsQOVp1orNKgpD6PECAwEAATANBgkqhkiG9w0BAQsFAAOBgQDEs05PTHObspw2u55fg7GagNl9S/Do0TaeQeBjRiXLNYtRByT7g1VfcW8REh+rtU8WV6YJtoSSZBK6peZNEzC1MSBImkr052Mw55FZIwKu1rdqM3zSvi/BA7ogiac9z/lrmVjF4+ydLdu1UuDFC89SlwZI/QC/CogajHXspu9g/A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
